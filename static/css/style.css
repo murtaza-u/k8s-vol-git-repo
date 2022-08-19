@@ -1,0 +1,56 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;
+        --fg-color: #000;
+        --link-color: #0a1172;
+        --visited-color: purple;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1b191b;
+        --fg-color: #ebdbb2;
+        --link-color: #63c5da;
+        --visited-color: #ff72ff;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--visited-color);
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+h1, p, ul {
+    margin-top: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    padding: 0.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+}
